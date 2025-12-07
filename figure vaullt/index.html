@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figure Vault | Buy & Sell Anime Figurines</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fas fa-robot"></i>
+                <span>Figure Vault</span>
+            </a>
+            
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#browse">Browse</a></li>
+                    <li><a href="#sell">Sell</a></li>
+                    <li><a href="#collections">Collections</a></li>
+                    <li><a href="#community">Community</a></li>
+                </ul>
+            </nav>
+            
+            <div class="user-actions">
+                <!-- Show these when user is not logged in -->
+                <a href="#" class="signup-btn" id="openSignup">Sign Up</a>
+                <a href="#" class="login-btn" id="openLogin">Log In</a>
+                
+                <!-- Show this when user is logged in -->
+                <!--
+                <div class="user-profile">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+                    <span>Alex</span>
+                </div>
+                -->
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Your Ultimate Anime Figurine Marketplace</h1>
+                <p>Buy, sell, and trade premium anime figurines from all your favorite series. Join thousands of collectors in our secure marketplace.</p>
+                <div class="cta-buttons">
+                    <a href="#browse" class="cta-btn buy"><i class="fas fa-shopping-cart"></i> Shop Figurines</a>
+                    <a href="#sell" class="cta-btn sell"><i class="fas fa-peso-sign"></i> Sell Your Figurines</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Featured Figurines -->
+        <div class="container" id="browse">
+            <h2 class="section-title">Featured Figurines</h2>
+            <div class="figurines-grid">
+                <!-- Figurine cards will be populated by JavaScript -->
+            </div>
+        </div>
+        
+        <!-- How It Works -->
+        <section class="how-it-works">
+            <div class="container">
+                <h2 class="section-title">How Figure Vault Works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <h3 class="step-title">Create Account</h3>
+                        <p>Sign up for free and create your collector profile. Verify your account for full access.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3 class="step-title">Browse or List</h3>
+                        <p>Find figurines you love or list your own for sale with detailed descriptions and photos.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3 class="step-title">Secure Transaction</h3>
+                        <p>Use our secure payment system and buyer/seller protection for safe transactions.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <h3 class="step-title">Fast Delivery</h3>
+                        <p>Get your figurine delivered safely with tracking and insurance options available.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sell Section -->
+        <div class="container" id="sell">
+            <h2 class="section-title">Ready to Sell?</h2>
+            <div class="sell-container">
+                <div class="sell-info">
+                    <h3>Sell Your Figurines Easily</h3>
+                    <p>List your anime figurines for sale in just a few clicks. Our platform makes it simple to reach thousands of potential buyers.</p>
+                    <ul class="sell-features">
+                        <li><i class="fas fa-check-circle"></i> No listing fees for your first 5 items</li>
+                        <li><i class="fas fa-check-circle"></i> Seller protection up to ₱250,000</li>
+                        <li><i class="fas fa-check-circle"></i> Professional photography tips</li>
+                        <li><i class="fas fa-check-circle"></i> Automated pricing suggestions</li>
+                    </ul>
+                    <button class="btn btn-sell-large" id="startSellingBtn">
+                        <i class="fas fa-upload"></i> Start Selling Now
+                    </button>
+                </div>
+                <div class="sell-image">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sell Figurines">
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Figure Vault</h3>
+                    <p>The premier marketplace for anime figurine collectors. Buy, sell, and trade with confidence in our secure community.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#browse">Browse Figurines</a></li>
+                        <li><a href="#sell">Sell Your Figurines</a></li>
+                        <li><a href="#collections">New Arrivals</a></li>
+                        <li><a href="#collections">Popular Series</a></li>
+                        <li><a href="#collections">Limited Editions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Seller Guidelines</a></li>
+                        <li><a href="#">Buyer Protection</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-discord"></i> Discord Community</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2023 Figure Vault. All rights reserved. This site is for demonstration purposes only.
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Sign Up Form -->
+    <div class="auth-overlay" id="signupOverlay">
+        <div class="auth-container">
+            <div class="close-auth" id="closeSignup">&times;</div>
+            <h2 class="auth-title">Join Figure Vault</h2>
+            <p class="auth-subtitle">Start buying and selling anime figurines today</p>
+            
+            <form class="auth-form" id="signupForm">
+                <div class="form-group">
+                    <label for="signupUsername">Username</label>
+                    <input type="text" id="signupUsername" placeholder="Choose a username" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signupEmail">Email Address</label>
+                    <input type="email" id="signupEmail" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" placeholder="Create a password" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signupConfirmPassword">Confirm Password</label>
+                    <input type="password" id="signupConfirmPassword" placeholder="Confirm your password" required>
+                </div>
+                
+                <button type="submit" class="auth-btn">Create Account</button>
+                
+                <div class="auth-switch">
+                    Already have an account? <a href="#" id="switchToLogin">Log In</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Log In Form -->
+    <div class="auth-overlay" id="loginOverlay">
+        <div class="auth-container">
+            <div class="close-auth" id="closeLogin">&times;</div>
+            <h2 class="auth-title">Welcome Back</h2>
+            <p class="auth-subtitle">Log in to your Figure Vault account</p>
+            
+            <form class="auth-form" id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                </div>
+                
+                <button type="submit" class="auth-btn">Log In</button>
+                
+                <div class="auth-switch">
+                    Don't have an account? <a href="#" id="switchToSignup">Sign Up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
